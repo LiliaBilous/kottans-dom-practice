@@ -68,7 +68,7 @@ window.addEventListener("DOMContentLoaded", () => {
     sideMenuBurger.classList.toggle("active");
   })
   
-  fetch("./mountains.json")
+  fetch("mountains.json")
     .then((response) => {
       return response.json();
     })
