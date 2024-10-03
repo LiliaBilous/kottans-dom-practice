@@ -69,11 +69,8 @@ window.addEventListener("DOMContentLoaded", () => {
   })
   
   fetch("mountains.json")
-    .then((response) => {
-      return response.json();
-    })
+    .then((response) => response.json())
     .then((data) => {
-      // console.log(data);
       mountains = data;
       renderMenu(mountains);
       renderContent(mountains[0]);
